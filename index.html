@@ -10,6 +10,11 @@
             src: url(/Users/yatu/Library/Fonts/kesslerdisplay-regular-TRIAL-BF657264481e435.otf) format('opentype');
         }
 
+        @font-face {
+            font-family: 'GT America Trial';
+            src: url(/Users/yatu/Library/Fonts/GT-America-Expanded-Regular-Trial.otf) format(opentype);
+        }
+
         body, html {
             height: 100%;
             margin: 0;
@@ -21,19 +26,52 @@
 
         .container {
             text-align: center;
+            width: 350px; /* Matches with logo wdith */
+            margin: 0 auto; /* Centers the containter */
+            padding-bottom: center;
+
         }
 
         h1 {
             font-family: 'Kessler Display';
             font-size: 99px;
             font-weight: normal;
+            white-space: nowrap; /* prevents text wrapping */
             margin-bottom: 30px;
         }
+
+        .logo {
+            display: block;
+            width: 350px; /*adjust this to match your logo's size */
+            height: auto; /*This maintains the aspect ration */
+            margin: 20px auto 0; /*adds space between text and logo */
+        }
+
+        .description {
+            font-family: 'GT America Trial', Arial, sans-serif;
+            font-size: 26.81px;
+            line-height: 1.2; /* Adjust this as needed */
+            color: #000000;
+            margin-top: 30px; /* Adjust spacing as needed */
+            text-align: center;
+        }
+
+        .contact {
+            font-family: 'GT America Trial', Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.2; /* Adjust this as needed */
+            color: #000000;
+            text-align: center;
+        }
+
+
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Concrete.</h1>
+        <img src="images/concrete-logo.png" alt="Concrete Logo" class="logo">
+        <p class="description"> We cement your ideas.</p>
         </div>
 </body>
 </html>
